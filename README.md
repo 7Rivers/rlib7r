@@ -36,3 +36,5 @@ Then build and install.
 devtools::build()
 devtools::install()
 ```
+### If you use functions from another package
+Add dependency in `DESCRIPTION` under `Imports`.  Do not use `library` or `require`.
