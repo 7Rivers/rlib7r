@@ -11,3 +11,6 @@ Description: It interfaces with SAS-ATLAS API and other data sources (UKB, array
 License: Proprietary
 Encoding: UTF-8
 LazyData: true
+Imports:
+	RMySQL
+
