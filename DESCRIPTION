@@ -1,13 +1,13 @@
 Package: rlib7r
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Version: 0.0.01
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Fah",
+           family = "Sathirapongsasuti",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "fah.s@medgenome.com",
+           comment = c(ORCID = "0000-0002-8157-3665"))
+Description: R package for internal use of MedGenome | 7 Rivers. It interfaces with SAS-ATLAS API and other data sources (UKB, array) and performs stats/ML tasks.
+License: Proprietary
 Encoding: UTF-8
 LazyData: true
