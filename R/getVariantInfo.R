@@ -12,14 +12,14 @@
 #' @param varids Vector of variant IDs
 #' @param source Name of the dataset to pull from
 #' @examples
-#' get.var.info(varids=c(1221787, 1221983, 1222865), source='medvardb')
+#' getVariantInfo(varids=c(1221787, 1221983, 1222865), source='medvardb')
 #' @export
 getVariantInfo = function(snps, varids, source=names(.src.to.dbtable),
                           con=NULL, db.info) {
     source = match.arg(source)
     src.db = .src.to.dbtable[source] 
     if (is.null(con)) {
-        con = dbConnect(db.info=db.info)
+        con = .dbConnect(db.info=db.info)
         on.exit(dbDisconnect(con))
     }
     sql = sprintf("select * from %s where variant_id in (%s)", 
