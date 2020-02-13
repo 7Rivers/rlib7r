@@ -19,7 +19,7 @@ While not strict, it is a good idea to follow <a href='http://web.stanford.edu/c
 - Line Length: maximum 80 characters
 - Indentation: two spaces, no tabs
 - Curly Braces: first on same line, last on own line
-- Assignment: use `<-`, not `=`, never `->`
+- Assignment: use `<-` or `=`, never `->`
 - Semicolons: don't use them
 - Commenting Guidelines: all comments begin with `#` followed by a space; inline comments need two spaces before the `#`
 - Function Documentation: see how to write `roxygen` doc strings in <a href='http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html'>Fong Chun Chan's blog</a>
