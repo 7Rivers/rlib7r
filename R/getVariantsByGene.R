@@ -7,7 +7,7 @@
 #' get.variants.by.gene(gene='PCSK9', vep_var_impact='HIGH', canonical=TRUE)
 #' @export
 getVariantsByGene = function(gene, vep_var_impact=NULL, canonical=TRUE, 
-                                con=NULL, db.info=.fah.dbinfo) {
+                                con=NULL, db.info) {
     if (is.null(con)) {
         con = dbConnect(db.info=db.info)
         on.exit(dbDisconnect(con))

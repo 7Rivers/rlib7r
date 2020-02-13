@@ -5,8 +5,7 @@
 #' @examples
 #' get.gene.info('PCSK9')
 #' @export
-getGeneInfo = function(gene,
-                         con=NULL, db.info=.fah.dbinfo) {
+getGeneInfo = function(gene, con=NULL, db.info) {
     if (is.null(con)) {
         con = dbConnect(db.info=db.info)
         on.exit(dbDisconnect(con))

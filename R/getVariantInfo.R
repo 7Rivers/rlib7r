@@ -15,7 +15,7 @@
 #' get.var.info(varids=c(1221787, 1221983, 1222865), source='medvardb')
 #' @export
 getVariantInfo = function(snps, varids, source=names(.src.to.dbtable),
-                          con=NULL, db.info=.fah.dbinfo) {
+                          con=NULL, db.info) {
     source = match.arg(source)
     src.db = .src.to.dbtable[source] 
     if (is.null(con)) {
