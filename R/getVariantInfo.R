@@ -24,7 +24,7 @@ getVariantInfo = function(snps, varids, source=names(.src.to.dbtable),
     }
     sql = sprintf("select * from %s where variant_id in (%s)", 
                   src.db, paste(varids, collapse=','))
-    var.info = dbGetQuery(con, sql)
+    var.info = RMySQL::dbGetQuery(con, sql)
     return(var.info)
 }
 
