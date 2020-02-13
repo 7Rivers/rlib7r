@@ -16,7 +16,7 @@ getVariantsByGene = function(gene, vep_var_impact=NULL, canonical=TRUE,
     if (canonical) sql = paste(sql, "and canonical_tras = 'Y'")
     if (!is.null(vep_var_impact)) 
         sql = paste0(sql, "and vep_var_impact = '", vep_var_impact, "'")
-    variants = dbGetQuery(con, sql)
+    variants = RMySQL::dbGetQuery(con, sql)
     return(variants)
 }
 
