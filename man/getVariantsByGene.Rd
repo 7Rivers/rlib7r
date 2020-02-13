@@ -9,7 +9,7 @@ getVariantsByGene(
   vep_var_impact = NULL,
   canonical = TRUE,
   con = NULL,
-  db.info = .fah.dbinfo
+  db.info
 )
 }
 \arguments{
@@ -23,5 +23,5 @@ getVariantsByGene(
 Get variants in a gene
 }
 \examples{
-get.variants.by.gene(gene='PCSK9', vep_var_impact='HIGH', canonical=TRUE)
+getVariantsByGene(gene='PCSK9', vep_var_impact='HIGH', canonical=TRUE)
 }

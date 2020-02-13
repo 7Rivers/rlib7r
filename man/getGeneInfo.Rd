@@ -4,7 +4,7 @@
 \alias{getGeneInfo}
 \title{Get gene information}
 \usage{
-getGeneInfo(gene, con = NULL, db.info = .fah.dbinfo)
+getGeneInfo(gene, con = NULL, db.info)
 }
 \arguments{
 \item{gene}{HGNC gene symbol}
@@ -16,5 +16,5 @@ data.frame of gene info
 Get gene information
 }
 \examples{
-get.gene.info('PCSK9')
+getGeneInfo('PCSK9')
 }

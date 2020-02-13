@@ -9,7 +9,7 @@ getVariantInfo(
   varids,
   source = names(.src.to.dbtable),
   con = NULL,
-  db.info = .fah.dbinfo
+  db.info
 )
 }
 \arguments{
@@ -23,5 +23,5 @@ getVariantInfo(
 query DB tables for variant informaiton
 }
 \examples{
-get.var.info(varids=c(1221787, 1221983, 1222865), source='medvardb')
+getVariantInfo(varids=c(1221787, 1221983, 1222865), source='medvardb')
 }
