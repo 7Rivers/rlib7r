@@ -13,7 +13,7 @@ getGeneInfo = function(gene, con=NULL, db.info) {
     sql = sprintf("select * from gene_master 
                 where gene_symbol = '%s' 
                 and ens_gene_id like 'ENSG%%'", gene)
-    genes = dbGetQuery(con, sql)
+    genes = RMySQL::dbGetQuery(con, sql)
     return(genes)  
 }
 
