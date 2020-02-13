@@ -24,7 +24,7 @@ getVariantAnnotation <- function(chrom, pos, ref, alt, con=NULL, db.info) {
 		WHERE
 	    vi.chrom = '%s' AND vi.start = '%s' AND  vi.ref='%s' AND vi.alt='%s';
   ", chrom, pos, ref, alt)
-  var.info = dbGetQuery(con, sql)
+  var.info = RMySQL::dbGetQuery(con, sql)
   return(var.info)
 }
 
