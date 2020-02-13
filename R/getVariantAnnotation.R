@@ -8,7 +8,7 @@
 #' @export
 getVariantAnnotation <- function(chrom, pos, ref, alt, con=NULL, db.info) {
   if (is.null(con)) {
-    con = dbConnect(db.info = db.info)
+    con = .dbConnect(db.info = db.info)
     on.exit(dbDisconnect(con))
   }
 	sql = sprintf("
